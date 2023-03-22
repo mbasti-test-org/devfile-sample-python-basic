@@ -4,6 +4,12 @@ FROM registry.access.redhat.com/ubi9/python-39:latest
 EXPOSE 8081/tcp
 ENV FLASK_PORT=8081
 
+LABEL description=yolo
+LABEL io_k8s_description=yolo_k8s
+LABEL io_k8s_display_name=yolo_display_name
+LABEL io_openshift_tags=yolo_tag
+LABEL summary=yolo_summary
+
 # Set the working directory in the container
 WORKDIR /projects
 
