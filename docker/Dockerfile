@@ -5,9 +5,9 @@ EXPOSE 8081/tcp
 ENV FLASK_PORT=8081
 
 LABEL description=yolo
-LABEL io_k8s_description=yolo_k8s
-LABEL io_k8s_display_name=yolo_display_name
-LABEL io_openshift_tags=yolo_tag
+LABEL io.k8s.description=yolo_k8s
+LABEL io.k8s.display_name=yolo_display_name
+LABEL io.openshift.tags=yolotag
 LABEL summary=yolo_summary
 
 # Set the working directory in the container
